@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vaxobov Asilbek - Robotics va AI Developer portfolio sayti">
+    <meta name="keywords" content="Asilbek, Robotics, AI, Telegram Bot, Developer, O'zbekiston">
+    <meta name="author" content="Vaxobov Asilbek">
+    <title>Vaxobov Asilbek - Robotics & AI Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">Asilbek</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Bosh sahifa</a></li>
+                <li><a href="#about" class="nav-link">Men haqimda</a></li>
+                <li><a href="#skills" class="nav-link">Ko'nikmalar</a></li>
+                <li><a href="#projects" class="nav-link">Loyihalar</a></li>
+                <li><a href="#contact" class="nav-link">Aloqa</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="greeting">Salom, men</div>
+                <h1 class="hero-title">
+                    Vaxobov <span class="gradient-text">Asilbek</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Sun'iy intellekt va robotexnika sohasida innovatsion yechimlar yaratuvchi dasturchi.
+                    Har bir loyihada texnologiya va ijodkorlikning mukammal uyg'unligini yarataman.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Loyihalarimni ko'rish</a>
+                    <a href="#contact" class="btn btn-secondary">Bog'lanish</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://t.me/yozuras" target="_blank" class="social-icon" title="Telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-2.146 9.514-2.146 9.514-.15.653-.548.817-.996.502l-3.91-2.884-1.88 1.811c-.208.208-.382.382-.782.382-.515 0-.428-.194-.605-.686l-1.385-4.545L2.05 10.58c-.651-.206-.666-.652.142-.968l14.01-5.4c.548-.2 1.024.13.86.95z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:vaxobovasilbek1@gmail.com" class="social-icon" title="Email">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </a>
+                    <a href="tel:+998934989454" class="social-icon" title="Phone">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/__Asilbek_12_" target="_blank" class="social-icon"
+                        title="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="floating-icon icon-1">🤖</div>
+                    <div class="floating-icon icon-2">💻</div>
+                    <div class="floating-icon icon-3">🚀</div>
+                    <div class="floating-icon icon-4">⚡</div>
+                    <div class="avatar-circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                Men haqimda
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Men <strong>Robotics va AI Developer</strong> sifatida texnologiyaning eng so'nggi
+                        yutuqlaridan foydalanib, haqiqiy hayotdagi murakkab muammolarga innovatsion va amaliy
+                        yechimlar yaratishga ixtisoslashganman. Har bir loyiha orqali mahalliy sanoat va
+                        bizneslarni raqamli texnologiyalar bilan boyitish, ularning samaradorligini oshirish
+                        va kelajak uchun poydevor yaratishga harakat qilaman.
+                    </p>
+                    <p class="about-description">
+                        Sun'iy intellekt, robotexnika, IoT va murakkab tizimlarni avtomatlashtirish sohasida
+                        chuqur bilim va ko'p yillik amaliy tajribaga egaman. Texnologiya va kreativlikni
+                        birlashtirish orqali nafaqat muammolarni hal qilaman, balki yangi imkoniyatlar yarataman.
+                        Har bir ishda foydalanuvchi tajribasini yaxshilash, tizim samaradorligini maksimal darajada
+                        oshirish va zamonaviy standartlarga javob beradigan echimlar ishlab chiqishga alohida
+                        e'tibor qarataman.
+                    </p>
+                    <p class="about-description">
+                        Mening maqsadim - texnologiya orqali odamlarning hayotini osonlashtirish va bizneslarni
+                        yangi bosqichga olib chiqish. Har bir kod qatori, har bir loyiha - bu kelajakka sarmoya.
+                    </p>
+                    <div class="location-info">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        <span>O'zbekiston, Andijon</span>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Muvaffaqiyatli loyihalar</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💼</div>
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Yillik tajriba</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🤝</div>
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Mijozlar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Ko'nikmalar
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🤖</span>
+                        AI & Robotics
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Sun'iy Intellekt (AI)</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Robotexnika</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">IoT & Avtomatlashtirish</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">💻</span>
+                        Dasturlash tillari
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🛠️</span>
+                        Texnologiyalar
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Telegram Bot API</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Smart Home</span>
+                        <span class="skill-tag">IoT Sensors</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Neural Networks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Loyihalarim
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-icon">🥊</div>
+                    <h3 class="project-title">Punch Tester</h3>
+                    <p class="project-description">
+                        Boks apparati - bog'larda ishlatilinadigan, insonning zarba kuchini
+                        o'lchaydigan zamonaviy asbob. Real vaqtda natijalarni ko'rsatadi va
+                        statistika yuritadi.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Arduino</span>
+                        <span class="tech-badge">Sensors</span>
+                        <span class="tech-badge">C++</span>
+                        <span class="tech-badge">LCD Display</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card featured">
+                    <div class="featured-badge">⭐ Premium</div>
+                    <div class="project-icon">🏟️</div>
+                    <h3 class="project-title">Smart Stadion</h3>
+                    <p class="project-description">
+                        Stadionni to'liq avtomatlashtirish tizimi. Mobil ilovadan pul
+                        to'lanadi, eshiklar, yorug'lik va boshqa funktsiyalar avtomatik
+                        boshqariladi. Energiya tejash va maxsus tajriba.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">IoT</span>
+                        <span class="tech-badge">Mobile App</span>
+                        <span class="tech-badge">Smart Control</span>
+                        <span class="tech-badge">Cloud</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-icon">🏠</div>
+                    <h3 class="project-title">Smart Home</h3>
+                    <p class="project-description">
+                        Aqlli uy tizimi - uyingizni masofadan boshqarish, avtomatlashtirish
+                        va energiya tejashga yordam beradigan kompleks yechim. Ovoz bilan
+                        boshqarish imkoniyati mavjud.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">IoT</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Automation</span>
+                        <span class="tech-badge">Voice Control</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-icon">🤖</div>
+                    <h3 class="project-title">Telegram Botlar</h3>
+                    <p class="project-description">
+                        Professional Telegram botlar yaratish. Biznes uchun, do'kon
+                        boshqaruvi, kino va media botlar. AI integratsiya va mukammal
+                        foydalanuvchi tajribasi.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://t.me/MJstoreuz_bot" target="_blank" class="bot-link">
+                            @MJstoreuz_bot
+                        </a>
+                        <a href="https://t.me/MovieCodeeUzBot" target="_blank" class="bot-link">
+                            @MovieCodeeUzBot
+                        </a>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Telegram API</span>
+                        <span class="tech-badge">Database</span>
+                        <span class="tech-badge">AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                Bog'lanish
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Keling, birgalikda ishlaymiz!</h3>
+                    <p class="contact-text">
+                        Loyihangiz bormi? Savol yoki takliflaringiz bormi?
+                        Men bilan bog'lanishdan tortinmang! Sizning g'oyalaringizni
+                        hayotga taqlid etishga tayyorman.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:vaxobovasilbek1@gmail.com" class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-info">
+                                <div class="method-label">Email</div>
+                                <div class="method-value">vaxobovasilbek1@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="tel:+998934989454" class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div class="method-info">
+                                <div class="method-label">Telefon</div>
+                                <div class="method-value">+998 93 498 94 54</div>
+                            </div>
+                        </a>
+                        <a href="https://t.me/yozuras" target="_blank" class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div class="method-info">
+                                <div class="method-label">Telegram</div>
+                                <div class="method-value">@yozuras</div>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/__Asilbek_12_" target="_blank" class="contact-method">
+                            <div class="method-icon">📸</div>
+                            <div class="method-info">
+                                <div class="method-label">Instagram</div>
+                                <div class="method-value">@__Asilbek_12_</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <div class="cta-box">
+                        <h4>Loyiha boshlashga tayyormisiz?</h4>
+                        <p>Men bilan bog'laning va g'oyangizni amalga oshiramiz!</p>
+                        <a href="mailto:vaxobovasilbek1@gmail.com" class="btn btn-primary btn-large">
+                            Xabar yuborish
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    &copy; 2024 Vaxobov Asilbek. Barcha huquqlar himoyalangan.
+                </p>
+                <p class="footer-subtext">
+                    Innovatsiya va texnologiya bilan yaratilgan ❤️
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
